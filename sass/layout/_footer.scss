@@ -1,0 +1,127 @@
+.footer {
+  padding: 60px 0;
+
+  background-color: #2f303a;
+  & .container {
+    display: flex;
+    align-items: baseline;
+  }
+  & .logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+    color: $primary-white-color;
+  }
+  & .link {
+    line-height: 1.71;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.address-info {
+  margin-right: 70px;
+}
+
+.address {
+  margin-bottom: 9px;
+
+  font-style: normal;
+  line-height: 1.71;
+
+  color: $primary-white-color;
+}
+
+.footer-contacts:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.join-title {
+  margin-bottom: 20px;
+
+  font-size: $primary-font-size;
+  font-weight: 700;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+}
+
+.footer-social-icons {
+  & .list {
+    padding: 0;
+  }
+  & .link {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $primary-white-color;
+  }
+}
+
+.subscribe-wraper {
+  margin-left: auto;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  width: 570px;
+  margin-left: auto;
+}
+
+.form-title-subscribe {
+  margin-bottom: 20px;
+  font-size: $primary-font-size;
+  font-weight: $title-font-weight;
+  line-height: 1.143;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+}
+
+.mail-input {
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  color: $primary-white-color;
+  background-color: #2f303a;
+  &::placeholder {
+    font-weight: $paragraph-font-weight;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.subscribe-btn {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding: 10px 28px;
+}
+
+.send-icon {
+  position: absolute;
+  top: 50%;
+  left: 148px;
+
+  transform: translateY(-50%);
+
+  fill: $primary-white-color;
+}

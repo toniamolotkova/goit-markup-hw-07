@@ -1,0 +1,33 @@
+.features {
+  &.list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .item {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &-title {
+    margin-bottom: 10px;
+    font-weight: $title-font-weight;
+    font-size: $primary-font-size;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: $head-text-color;
+  }
+  &-text {
+    line-height: 1.71;
+  }
+}
+.feature-thumb {
+  @extend %flex-center;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $accent-background-color;
+  border-radius: 4px;
+}

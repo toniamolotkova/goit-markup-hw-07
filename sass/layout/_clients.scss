@@ -1,0 +1,25 @@
+.clients {
+  &-logo.list {
+    display: flex;
+  }
+  &-items:not(:last-child) {
+    margin-right: 30px;
+  }
+  &.link {
+    @extend %flex-center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $icon-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    fill: $icon-color;
+
+    transition: border $primary-transform, fill $primary-transform;
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+      fill: $accent-color;
+    }
+  }
+}

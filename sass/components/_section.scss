@@ -1,0 +1,14 @@
+.section {
+  padding: 94px 0;
+
+  &-title {
+    margin-bottom: 50px;
+
+    font-weight: $title-font-weight;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+
+    color: $head-text-color;
+  }
+}
